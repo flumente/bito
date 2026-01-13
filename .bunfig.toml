@@ -1,0 +1,28 @@
+# Bun configuration for optimized builds on M2
+
+[install]
+# Use hardlinks to save disk space
+hardlink = true
+
+# Cache directory
+cache = "node_modules/.cache"
+
+# Use native M2 optimizations
+native = true
+
+# Parallel installation
+parallel = true
+
+[install.lockfile]
+# Save lockfile
+save = true
+
+# Print changes
+print = "diff"
+
+[test]
+# Use all available CPU cores
+parallel = true
+
+# Timeout for tests
+timeout = 60000
